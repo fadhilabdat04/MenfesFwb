@@ -3,10 +3,9 @@ import config
 from pyrogram import Client, types, enums
 from plugins import Helper, Database
 
-async def start_handler(client: Client, msg: types.Message, pic: types.pic):
+async def start_handler(client: Client, msg: types.Message, photo: types.photo):
     helper = Helper(client, msg)
     first = msg.from_user.first_name
-    pic = config.start_pic
     last = msg.from_user.last_name
     fullname = f'{first} {last}' if last else first
     username = (
@@ -23,10 +22,12 @@ async def start_handler(client: Client, msg: types.Message, pic: types.pic):
             first_name = await helper.escapeHTML(first),
             last_name = await helper.escapeHTML(last),
             fullname = await helper.escapeHTML(fullname),
+            photo = await msg.photo = config.start_pic
             ),
         disable_web_page_preview = True,
         quote = True
     )
+        
 
 async def status_handler(client: Client, msg: types.Message):
     helper = Helper(client, msg)

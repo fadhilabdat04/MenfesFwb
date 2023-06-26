@@ -15,7 +15,7 @@ async def start_handler(client: Client, msg: types.Message):
     )
     mention = msg.from_user.mention
     await msg.reply_text(
-        Picture = config.picture_start
+        picture = config.picture_start
         text = config.start_msg.format(
             id = msg.from_user.id,
             mention = mention,

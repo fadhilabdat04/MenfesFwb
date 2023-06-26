@@ -14,7 +14,7 @@ async def start_handler(client: Client, msg: types.Message):
         else '@chatjomblohalu_bot'
     )
     mention = msg.from_user.mention
-PHOTO = ""
+PHOTO = "https://telegra.ph//file/aceb332fa6ee4543b842e.jpg""
     await msg.reply_text(
         text = config.start_msg.format(
             id = msg.from_user.id,

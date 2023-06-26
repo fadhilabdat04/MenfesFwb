@@ -6,6 +6,7 @@ from plugins import Helper, Database
 async def start_handler(client: Client, msg: types.Message, msg: types.pic:
     helper = Helper(client, msg)
     first = msg.from_user.first_name
+    pic = config.start_pic
     last = msg.from_user.last_name
     fullname = f'{first} {last}' if last else first
     username = (
@@ -15,7 +16,6 @@ async def start_handler(client: Client, msg: types.Message, msg: types.pic:
     )
     mention = msg.from_user.mention
     await msg.reply_text(
-        pic = config.start_pic
         text = config.start_msg.format(
             id = msg.from_user.id,
             mention = mention,

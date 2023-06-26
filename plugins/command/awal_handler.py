@@ -23,11 +23,12 @@ async def start_handler(client: Client, msg: types.Message, photo: types.photo):
             last_name = await helper.escapeHTML(last),
             fullname = await helper.escapeHTML(fullname),
             ),
+    if key == msg.reply_text 
+        picture = config.start_pic     
         disable_web_page_preview = True,
         quote = True
     )
-     if key == msg.reply_text 
-        picture = config.start_pic
+     
 
 async def status_handler(client: Client, msg: types.Message):
     helper = Helper(client, msg)

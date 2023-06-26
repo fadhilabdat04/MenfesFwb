@@ -27,7 +27,7 @@ async def start_handler(client: Client, msg: types.Message, photo: types.photo):
         quote = True
     )
      if key == msg.reply_text 
-        picture = config.pic_start
+        picture = config.start_pic
 
 async def status_handler(client: Client, msg: types.Message):
     helper = Helper(client, msg)

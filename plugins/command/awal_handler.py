@@ -15,7 +15,7 @@ async def start_handler(client: Client, msg: types.Message, msg: types.photo):
     )
     mention = msg.from_user.mention
     await msg.reply_text(
-        f"https://telegra.ph//file/aceb332fa6ee4543b842e.jpg"
+        f"https://telegra.ph//file/aceb332fa6ee4543b842e.jpg"{msg.from_reply_text}
         text = config.start_msg.format(
             id = msg.from_user.id,
             mention = mention,

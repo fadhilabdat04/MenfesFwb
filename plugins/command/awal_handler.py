@@ -3,7 +3,7 @@ import config
 from pyrogram import Client, types, enums
 from plugins import Helper, Database
 
-async def start_handler(client: Client, msg: types.Message, photo: types.photo):
+async def start_handler(client: Client, msg: types.Message):
     helper = Helper(client, msg)
     first = msg.from_user.first_name
     last = msg.from_user.last_name

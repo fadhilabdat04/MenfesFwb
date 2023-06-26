@@ -22,8 +22,7 @@ async def start_handler(client: Client, msg: types.Message, photo: types.photo):
             first_name = await helper.escapeHTML(first),
             last_name = await helper.escapeHTML(last),
             fullname = await helper.escapeHTML(fullname),
-    if msg.reply_text 
-        picture = config.start_pic       
+        photo = config.start_pic       
             ),     
         disable_web_page_preview = True,
         quote = True

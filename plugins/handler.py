@@ -47,7 +47,6 @@ async def on_message(client: Client, msg: Message):
         else:
             if command == '/start':  # menampilkan perintah start
                 return await start_handler(client, msg)
-                await picture_start 
                 
 
             elif command == '/help':

@@ -15,7 +15,6 @@ async def start_handler(client: Client, msg: types.Message):
     )
     mention = msg.from_user.mention
     await msg.reply_text(
-        picture = config.picture_start
         text = config.start_msg.format(
             id = msg.from_user.id,
             mention = mention,
@@ -27,7 +26,7 @@ async def start_handler(client: Client, msg: types.Message):
         disable_web_page_preview = True,
         quote = True
     )
-
+    await pic.config.picture_start
 
 async def status_handler(client: Client, msg: types.Message):
     helper = Helper(client, msg)

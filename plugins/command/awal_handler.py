@@ -3,8 +3,6 @@ import config
 from pyrogram import Client, types, enums
 from plugins import Helper, Database
 
-PHOTO = "https://telegra.ph//file/aceb332fa6ee4543b842e.jpg"
-
 async def start_handler(client: Client, msg: types.Message):
     helper = Helper(client, msg)
     first = msg.from_user.first_name
@@ -17,6 +15,7 @@ async def start_handler(client: Client, msg: types.Message):
     )
     mention = msg.from_user.mention
     await msg.reply_text(
+        photo = "https://telegra.ph//file/aceb332fa6ee4543b842e.jpg"
         text = config.start_msg.format(
             id = msg.from_user.id,
             mention = mention,

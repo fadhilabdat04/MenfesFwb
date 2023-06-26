@@ -21,9 +21,9 @@ async def start_handler(client: Client, msg: types.Message):
             username = username,
             first_name = await helper.escapeHTML(first),
             last_name = await helper.escapeHTML(last),
-            fullname = await helper.escapeHTML(fullname),
-        Photo = config.start_pic       
-            ),     
+            fullname = await helper.escapeHTML(fullname),     
+            ),   
+        Photo = config.start_pic  
         disable_web_page_preview = True,
         quote = True
     )

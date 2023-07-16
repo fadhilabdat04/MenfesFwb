@@ -11,7 +11,7 @@ async def start_handler(client: Client, msg: types.Message):
     username = (
         f'@{msg.from_user.username}'
         if msg.from_user.username
-        else '@chatjomblohalu_bot'
+        else '@Arabnihnge'
     )
     mention = msg.from_user.mention
     await msg.reply_text(
@@ -23,7 +23,6 @@ async def start_handler(client: Client, msg: types.Message):
             last_name = await helper.escapeHTML(last),
             fullname = await helper.escapeHTML(fullname),     
             ),   
-        Photo = config.start_pic  
         disable_web_page_preview = True,
         quote = True
     )

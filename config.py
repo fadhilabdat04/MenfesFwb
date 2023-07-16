@@ -17,7 +17,7 @@ channel_log = int(os.environ.get("CHANNEL_LOG", "-1001554653997"))
 id_admin = int(os.environ.get("ID_ADMIN", "1345594412"))
 # =========================================================== #
 
-batas_kirim = int(os.environ.get("BATAS_KIRIM", "1"))
+batas_kirim = int(os.environ.get("BATAS_KIRIM", "2"))
 batas_talent = int(os.environ.get("BATAS_TALENT", "15"))
 batas_daddy_sugar = int(os.environ.get("BATAS_DADDY_SUGAR", "10"))
 batas_moansgirl = int(os.environ.get("BATAS_MOANSGIRL", "10"))
@@ -47,7 +47,6 @@ pic_gf_rent = os.environ.get("PIC_GF_RENT", "https://telegra.ph//file/8b0d16b2cf
 
 pesan_join = os.environ.get("PESAN_JOIN", "Hai {mention} Sobat Efbees😉\n\nKamu Tidak dapat Mengirim Menfes , Harap Join Terllebih Dahulu Untuk Mengirim Menfess ya Efbees👍")
 start_msg = os.environ.get("START_MSG", "Hai {fullname} Sobat Efbees✨\n\nIni adalah bot FWB BASE SXID ya Efbees, semua pesan yang kamu kirim akan masuk ke channel secara anonim sesuai hastag:\n#FbsBoy / #FbsGirl untuk Mencari Pasangan, Teman , Partner dll\n#FbsAsk untuk Bertanya\n#FbsStory untuk Berbagi Cerita\n#FbsSpill untuk Spill Masalah\n#FbsFind untuk Mencari Pasangan, Teman, Partner dll\n\nContoh:\n{mention} Cari Mutualan Dom Depok #FbsFind/n🎫For Top Up Coin or Question Contact Arabnihnge.t.me")
-start_pic = os.environ.get("START_PIC", "https://telegra.ph//file/aceb332fa6ee4543b842e.jpg")
 gagalkirim_msg = os.environ.get("GAGAL_KIRIM", """
 {mention}, pesan mu gagal terkirim silahkan gunakan hastag:
 
